@@ -1,0 +1,40 @@
+
+# Get authors list
+GET http://127.0.0.1:8001/books HTTP/1.1
+Accept: application/json
+
+
+###
+# Get especifc author
+GET http://localhost:8001/books/1 HTTP/1.1
+Accept: application/json
+
+
+###
+POST  http://localhost:8001/books HTTP/1.1
+Accept: application/json
+content-type: application/json
+
+{
+    "name" : "Diego Rodrigo",
+    "gender" : "male",
+    "country" : "Brazil"
+
+}
+###
+
+###
+PUT  http://localhost:8001/books/9 HTTP/1.1
+Accept: application/json
+content-type: application/json
+
+{
+    "name" : "Diego Rodrigo",
+    "gender" : "male",
+    "country" : "Brazil"
+
+}
+
+###
+DELETE  http://localhost:8001/books/100 HTTP/1.1
+Accept: application/json
