@@ -15,9 +15,10 @@ class CreateBooksTable extends Migration
     {
         Schema::create('books', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->enum('gender', ['male', 'female']);
-            $table->string('country');
+            $table->string('title');
+            $table->string('description');
+            $table->integer('price')->unsigned();
+            $table->integer('author_id')->unsigned();
             $table->timestamps();
         });
     }
