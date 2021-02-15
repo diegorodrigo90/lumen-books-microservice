@@ -42,7 +42,7 @@ class BookController extends Controller
     {
         $rules = [
             'title' => 'required|max:255',
-            'description' => 'required|max:255|in:male,female',
+            'description' => 'required|max:255',
             'price' => 'required|integer|min:1',
             'author_id' => 'required|integer|min:1'
         ];
@@ -74,7 +74,7 @@ class BookController extends Controller
     {
         $rules = [
             'title' => 'max:255',
-            'description' => 'max:255|in:male,female',
+            'description' => 'max:255',
             'price' => 'integer|min:1',
             'author_id' => 'integer|min:1'
         ];

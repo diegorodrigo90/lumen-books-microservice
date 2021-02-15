@@ -16,9 +16,10 @@ Accept: application/json
 content-type: application/json
 
 {
-    "name" : "Diego Rodrigo",
-    "gender" : "male",
-    "country" : "Brazil"
+    "title" : "Title",
+    "description" : "Descriptiopn",
+    "price" : 10,
+    "author_id": 55
 
 }
 ###
@@ -29,9 +30,10 @@ Accept: application/json
 content-type: application/json
 
 {
-    "name" : "Diego Rodrigo",
-    "gender" : "male",
-    "country" : "Brazil"
+    "title" : "New title",
+    "description" : "New description",
+    "price" : 10,
+    "author_id": 55
 
 }
 
