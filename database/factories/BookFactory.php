@@ -22,7 +22,7 @@ class BookFactory extends Factory
     public function definition()
     {
         return [
-            'uuid' => 'uuid' => Str::uuid()->toString(),
+            'uuid' => Str::uuid()->toString(),
             'title' => $this->faker->sentence(3, true),
             'description' => $this->faker->sentence(6, true),
             'price' => $this->faker->numberBetween(25, 150),
