@@ -4,6 +4,7 @@ namespace Database\Factories;
 
 use App\Models\Book;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Str;
 
 class BookFactory extends Factory
 {
@@ -21,6 +22,7 @@ class BookFactory extends Factory
     public function definition()
     {
         return [
+            'uuid' => 'uuid' => Str::uuid()->toString(),
             'title' => $this->faker->sentence(3, true),
             'description' => $this->faker->sentence(6, true),
             'price' => $this->faker->numberBetween(25, 150),
